@@ -123,8 +123,6 @@
     
     NSInteger interSpace = 0;
     interSpace = maxRating-1>0?(starsSpace - (maxRating)*size.width)/(maxRating-1):0;
-    if( interSpace <0 )
-        interSpace=0;
     CGFloat x = horizontalMargin + size.width*position;
     if( position >0 )
         x+=interSpace*position;
